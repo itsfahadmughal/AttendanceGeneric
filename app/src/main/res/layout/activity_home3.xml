@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradiant_background"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        tools:context=".HomeActivity">
+
+
+        <Button
+            android:id="@+id/button3_home3"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:elevation="10dp"
+            android:text="Check-In"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/button6_home3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView_home3" />
+
+        <Button
+            android:id="@+id/button6_home3"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:elevation="10dp"
+            android:text="Check-Out"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button3_home3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button3_home3"
+            app:layout_constraintTop_toTopOf="@+id/button3_home3" />
+
+
+
+        <TextView
+            android:id="@+id/textView_home3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:hint="EntityName"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/dp_Profile_home3"
+            app:layout_constraintStart_toStartOf="@+id/dp_Profile_home3"
+            app:layout_constraintTop_toBottomOf="@+id/dp_Profile_home3" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dp_Profile_home3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#11000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_home3"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Employee Name:"
+            android:padding="10dp"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_home3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

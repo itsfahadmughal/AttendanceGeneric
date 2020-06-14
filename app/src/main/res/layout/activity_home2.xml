@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        tools:context=".Home2Activity">
+
+        <Button
+            android:id="@+id/button3_admin"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:elevation="10dp"
+            android:text="Create User"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/button6_admin"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_admin" />
+
+        <Button
+            android:id="@+id/button4_admin"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:elevation="10dp"
+            android:text="Generate Payroll"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button11_admin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button11_admin"
+            app:layout_constraintTop_toTopOf="@+id/button11_admin" />
+
+        <Button
+            android:id="@+id/button5_admin"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:elevation="10dp"
+            android:text="Edit Payroll"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/button11_admin"
+            app:layout_constraintStart_toStartOf="@+id/button11_admin"
+            app:layout_constraintTop_toBottomOf="@+id/button11_admin" />
+
+        <Button
+            android:id="@+id/button6_admin"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:elevation="10dp"
+            android:text="Attendance Report"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button3_admin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button3_admin"
+            app:layout_constraintTop_toTopOf="@+id/button3_admin" />
+
+
+        <Button
+            android:id="@+id/button9_admin"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:elevation="10dp"
+            android:text="Approve\nTasks"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/button5_admin"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="446dp" />
+
+        <Button
+            android:id="@+id/button11_admin"
+            android:layout_width="134dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:elevation="10dp"
+            android:text="Approve Applications"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/button4_admin"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3_admin" />
+
+        <TextView
+            android:id="@+id/textView_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="EntityName"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/dp_Profile_admin"
+            app:layout_constraintStart_toStartOf="@+id/dp_Profile_admin"
+            app:layout_constraintTop_toBottomOf="@+id/dp_Profile_admin" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dp_Profile_admin"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#11000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

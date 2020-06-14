@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background"
+    tools:context=".PerformanceActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        tools:context=".PerformanceActivity">
+
+
+        <Button
+            android:id="@+id/button2_loan"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/editText3_loan"
+            app:layout_constraintStart_toStartOf="@+id/editText3_loan"
+            app:layout_constraintTop_toBottomOf="@+id/editText3_loan" />
+
+        <EditText
+            android:id="@+id/editText3_loan"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:background="@drawable/edittext_background"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Purpose:"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8_loan" />
+
+        <EditText
+            android:id="@+id/editText15_loan"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_background"
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="Amount in Rupees:"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7_loan" />
+
+        <Spinner
+            android:id="@+id/spinner_loan"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18_loan" />
+
+        <TextView
+            android:id="@+id/textView3_loan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Laon Application Form"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6_loan"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="center"
+            android:hint="Date:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView4_loan"
+            app:layout_constraintTop_toTopOf="@+id/textView4_loan" />
+
+        <TextView
+            android:id="@+id/textView4_loan"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Date Of Loan : "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView6_loan"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3_loan" />
+
+        <TextView
+            android:id="@+id/textView7_loan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Amount Of Loan (Rs)"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4_loan" />
+
+        <TextView
+            android:id="@+id/textView18_loan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="No Of Installments"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/editText15_loan"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textView8_loan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Purpose Of Loan"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_loan" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

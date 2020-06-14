@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:background="@drawable/listviewitem"
+    android:elevation="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text1_singlten_admin_attendance_rpt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="EmployeeName"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/text2_singlten_admin_attendance_rpt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="Total Days : "
+            android:textColor="#14cf06" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text3_singlten_admin_attendance_rpt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="Present Days : "
+            android:textColor="#14cf06" />
+
+
+        <TextView
+            android:id="@+id/text4_singlten_admin_attendance_rpt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="Rest Days : "
+            android:textColor="#14cf06" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text5_singlten_admin_attendance_rpt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:text="Late Entry : "
+            android:textColor="#961717" />
+
+
+        <TextView
+            android:id="@+id/text6_singlten_admin_attendance_rpt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:text="Early Leave : "
+            android:textColor="#961717" />
+
+    </LinearLayout>
+
+</LinearLayout>

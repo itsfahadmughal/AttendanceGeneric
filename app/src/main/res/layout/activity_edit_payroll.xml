@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background"
+    tools:context=".editPayrollActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        tools:context=".editPayrollActivity">
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttonbackgroundgradiant"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/editText18"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="DeductionAmt"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView27"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView27"
+            app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+        <EditText
+            android:id="@+id/editText19"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="cashAmt"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+        <EditText
+            android:id="@+id/editText16"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="ChequeAmt"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+        <EditText
+            android:id="@+id/editText17"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="AdditionAmt"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+        <EditText
+            android:id="@+id/editText18"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="TotalAmt"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView28"
+            app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Edit Payroll"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Emp Name : "
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView20"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Payroll Date : "
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView23"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Cheque Paid : "
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/editText16"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Addition Amt : "
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/editText17"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Deduction Amt :"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/editText15"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Total Amt : "
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/editText18"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Cash Paid : "
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/editText19"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView19"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView19"
+            app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toTopOf="@+id/textView22" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

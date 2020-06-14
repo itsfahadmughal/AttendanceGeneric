@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listviewitem"
+    android:orientation="vertical"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="20dp"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/single_text2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Date"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/single_text8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Break Min" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/single_text3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Check-In (Min)" />
+
+            <TextView
+                android:id="@+id/single_text6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Check-Out (Min)" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/single_text7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#db9c27"
+                android:gravity="end"
+                android:textSize="18dp"
+                android:paddingEnd="10dp"
+                android:text="Present" />
+
+
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/single_imageView"
+                android:layout_width="match_parent"
+                android:scaleType="centerInside"
+                android:layout_height="60dp"
+                android:src="@mipmap/smile" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
