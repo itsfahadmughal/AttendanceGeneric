@@ -78,14 +78,12 @@
             android:layout_height="100dp"
             android:background="@drawable/buttonbackgroundgradiant"
             android:elevation="10dp"
-            android:text="Approve\nTasks"
+            android:text="Tasks"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toStartOf="@+id/button5_admin"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="446dp" />
+            app:layout_constraintEnd_toEndOf="@+id/button4_admin"
+            app:layout_constraintStart_toStartOf="@+id/button4_admin"
+            app:layout_constraintTop_toTopOf="@+id/button5_admin" />
 
         <Button
             android:id="@+id/button11_admin"

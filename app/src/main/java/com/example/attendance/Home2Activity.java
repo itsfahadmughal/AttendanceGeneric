@@ -130,14 +130,17 @@ public class Home2Activity extends AppCompatActivity {
     }
 
     private void ViewTasks() {
-        Intent intent = new Intent(Home2Activity.this, ViewTasksAdminActivity.class);
-        intent.putExtra("EmpId", EmployeeId);
-        intent.putExtra("EmpName", EmployeeName);
-        intent.putExtra("UserId", UserId);
-        intent.putExtra("EmployeeImage", EmployeeImage);
-        startActivity(intent);
-        finish();
-        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+        Toast.makeText(this, "Task Clicked", Toast.LENGTH_LONG).show();
+
+//        Intent intent = new Intent(Home2Activity.this, ViewTasksAdminActivity.class);
+//        intent.putExtra("EmpId", EmployeeId);
+//        intent.putExtra("EmpName", EmployeeName);
+//        intent.putExtra("UserId", UserId);
+//        intent.putExtra("EmployeeImage", EmployeeImage);
+//        startActivity(intent);
+//        finish();
+//        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
     }
 
     private void assignTask() {
