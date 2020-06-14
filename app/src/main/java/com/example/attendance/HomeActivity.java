@@ -76,15 +76,19 @@ public class HomeActivity extends AppCompatActivity {
     private List<String> MessItems;
     private List<Double> TokenPrice;
     private ProgressDialog progressDialog;
-
-
+    private Button demo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
         inialization();
-
+        demo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(HomeActivity.this, "Demo", Toast.LENGTH_SHORT).show();
+            }
+        });
         checkin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -448,6 +452,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void inialization() {
+        demo = findViewById(R.id.button19);
         EntityName = findViewById(R.id.textView);
         checkin = findViewById(R.id.button3);
         breakin = findViewById(R.id.button4);

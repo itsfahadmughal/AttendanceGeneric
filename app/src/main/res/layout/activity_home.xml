@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button"
     android:layout_width="match_parent"
-    android:fillViewport="true"
+    android:layout_height="match_parent"
     android:background="@drawable/gradiant_background"
-    android:layout_height="match_parent">
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -142,9 +142,9 @@
             android:background="@drawable/buttonbackgroundgradiant"
             android:elevation="10dp"
             android:text="Task Submission"
-            android:visibility="gone"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="@+id/button14"
             app:layout_constraintTop_toBottomOf="@+id/button14" />
 
@@ -168,9 +168,9 @@
             android:layout_height="100dp"
             android:background="@drawable/buttonbackgroundgradiant"
             android:elevation="10dp"
+            android:text="View Tasks"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:text="View Tasks"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/button13"
             app:layout_constraintEnd_toEndOf="parent"
@@ -182,11 +182,11 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:gravity="center"
             android:hint="EntityName"
+            android:text="TextView"
             android:textColor="#000000"
             android:textSize="18dp"
-            android:gravity="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/dp_Profile"
             app:layout_constraintStart_toStartOf="@+id/dp_Profile"
@@ -204,6 +204,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Button"
+            app:layout_constraintEnd_toEndOf="@+id/button12"
+            app:layout_constraintStart_toStartOf="@+id/button12"
+            app:layout_constraintTop_toTopOf="@+id/button14" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
